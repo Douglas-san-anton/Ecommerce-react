@@ -50,9 +50,9 @@
   text-decoration: none;
 }
 
-.nav__item:hover {
+/* .nav__item:hover {
  
-}
+} */
 
 .nav__item::after {
   display: block;
