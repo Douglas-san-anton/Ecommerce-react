@@ -1,23 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import { Navbar } from './components/navbar/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-        Collections
-        Men
-        Women
-        About
-        Contact
 
-        Sneaker Company
+    <Navbar />
+
+        {/* Sneaker Company
 
         Fall Limited Edition Sneakers
 
-        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.
 
         $125.00
@@ -25,7 +20,7 @@ function App() {
         $250.00
 
         0
-        Add to cart
+        Add to cart */}
     </div>
   )
 }
