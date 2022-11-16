@@ -88,9 +88,10 @@
   .nav__menu {
     z-index: 100;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: none;
+    padding-left: 5rem;
     position: fixed;
     top: 99px;
     bottom: 0;
@@ -108,8 +109,28 @@
 
 }
 
-@media (max-width: 475px) {
+@media (max-width: 476px) {
+
+  .nav {
+    height: 70px;
+    border-bottom: none;
+  }
+  .nav__logo {
+    margin-right: 1rem;
+  }
   .nav__menu {
     width: 70%;
+    top: 70px;
+    padding-left: 2rem;
+    align-items: flex-start;
+    justify-content: none;
+  }
+
+  .nav__avatar_cart {
+    margin-right: 1rem;
+  }
+
+  .nav__avatar_avatar {
+    height: 2rem;
   }
 }
