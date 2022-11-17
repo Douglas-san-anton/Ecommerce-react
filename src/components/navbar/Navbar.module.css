@@ -55,7 +55,7 @@
 }
 
 .nav__item:hover {
-  border-bottom: 4px solid var(--Orange);
+  text-decoration: underline var(--Orange);
 }
 
 .nav__avatar {
