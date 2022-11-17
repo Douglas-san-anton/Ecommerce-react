@@ -3,6 +3,9 @@ import Styles from './Main.module.css'
 
 export const Main = () => {
   return (
-    <div>Main</div>
+    <section className={Styles.main__container}>
+      <section>Imagenes</section>
+      <section>Palabras</section>
+    </section>
   )
 }
