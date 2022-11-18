@@ -11,10 +11,12 @@
 }
 
 .main__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 100%;
   width: 75%;
-  margin: 3rem auto;
+  margin: 5rem auto;
+  gap: 5rem;
 }
 
 .image__hero {
@@ -32,5 +34,104 @@
 .image__mini>img {
   width: 100px;
   border-radius: .5rem;
+  margin-top: 1.5rem;
+}
+
+.main__secction_text {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__secction_text>h5 {
+  color: var(--Orange);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: 900;
+}
+
+.main__secction_text>h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
   margin-top: 1rem;
 }
+
+.main__secction_text>p {
+  color: var(--Grayish-blue);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.6rem;
+}
+
+.section__price {
+  margin-bottom: .5rem;
+}
+
+.section__price>span:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 1rem;
+}
+
+.section__price>span:last-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--Orange);
+  padding: 1px 10px;
+  background-color: var(--Pale-orange);
+  border-radius: 10px;
+}
+
+.price__disc {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: var(--Grayish-blue);
+  text-decoration: line-through;
+  margin-bottom: 2rem;
+}
+
+.section__add {
+  display: flex;
+  align-items: center;
+}
+
+.section__add_buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.section__add_buttons>button {
+  padding: 1rem 1.5rem;
+  border: none;
+  font-size: 1.2em;
+}
+
+.btn__minus {
+  border-radius: 10px 0 0 10px;
+}
+.btn__minus>img {
+  padding: 4px 0;
+}
+
+.btn__count {
+  font-weight: bold;
+}
+
+.btn__plus {
+  border-radius: 0 10px 10px 0;
+}
+
+.btn__add {
+  padding: 1.3rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: var(--White);
+  background-color: var(--Orange);
+}
+
+

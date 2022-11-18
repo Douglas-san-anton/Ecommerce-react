@@ -5,6 +5,9 @@ import p1Mini from '../../assets/image-product-1-mini.jpg'
 import p2Mini from '../../assets/image-product-2-mini.jpg'
 import p3Mini from '../../assets/image-product-3-mini.jpg'
 import p4Mini from '../../assets/image-product-4-mini.jpg'
+import minus from '../../assets/icon-minus.svg'
+import plus from '../../assets/icon-plus.svg'
+import cart from '../../assets/icon-cart.svg'
 
 export const Main = () => {
   return (
@@ -24,24 +27,31 @@ export const Main = () => {
       </section>
 
       <section className={Styles.main__secction_text}>
-        <h3>Sneaker Company</h3>
+        <h5>Sneaker Company</h5>
 
         <h1>Fall Limited Edition Sneakers</h1>
 
         <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
 
-        <div>
+        <div className={Styles.section__price}>
           <span>$125.00</span>
           <span>50%</span>
         </div>
 
-        <span>$250.00</span>
+        <span className={Styles.price__disc}>$250.00</span>
 
-        <div>
-          <button>0</button>
-          <button>Add to cart</button>
-        </div>
+        <section className={Styles.section__add}>
+
+          <div className={Styles.section__add_buttons}>
+            <button className={Styles.btn__minus}><img src={minus} alt="" /></button>
+            <button className={Styles.btn__count}>0</button>
+            <button className={Styles.btn__plus}><img src={plus} alt="" /></button>
+          </div>
+
+          <button className={Styles.btn__add}><img src={cart} alt="" /> Add to cart</button>
+
+        </section>
 
       </section>
     </section>
