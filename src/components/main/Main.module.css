@@ -1,3 +1,15 @@
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+
 .main__container {
   display: flex;
   height: 100%;

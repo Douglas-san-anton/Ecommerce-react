@@ -9,7 +9,7 @@ import p4Mini from '../../assets/image-product-4-mini.jpg'
 export const Main = () => {
   return (
     <section className={Styles.main__container}>
-      <section className={Styles.main__secction_img}> // clase sin usar
+      <section className={Styles.main__secction_img}> {/* clase sin usar */}
         <figure>
           <img src={product1} alt="logo" className={Styles.image__hero} />
         </figure>
@@ -24,6 +24,24 @@ export const Main = () => {
       </section>
 
       <section className={Styles.main__secction_text}>
+        <h3>Sneaker Company</h3>
+
+        <h1>Fall Limited Edition Sneakers</h1>
+
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+        <div>
+          <span>$125.00</span>
+          <span>50%</span>
+        </div>
+
+        <span>$250.00</span>
+
+        <div>
+          <button>0</button>
+          <button>Add to cart</button>
+        </div>
 
       </section>
     </section>
