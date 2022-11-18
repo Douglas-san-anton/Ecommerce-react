@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 :root {
   --Orange: hsl(26, 100%, 55%);
   --Pale-orange: hsl(25, 100%, 94%);
@@ -135,6 +137,8 @@
   border: none;
   border-radius: 10px;
   font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Kumbh Sans', sans-serif;
   color: var(--White);
   background-color: var(--Orange);
   box-shadow: 0 30px 30px var(--Pale-orange);
