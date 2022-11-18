@@ -1,6 +1,24 @@
 .main__container {
   display: flex;
   height: 100%;
-  width: 80%;
-  margin: 0 auto;
+  width: 75%;
+  margin: 3rem auto;
+}
+
+.image__hero {
+  width: 470px;
+  border-radius: 1rem;
+}
+
+.image__mini {
+  width: 470px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.43rem;
+}
+
+.image__mini>img {
+  width: 100px;
+  border-radius: .5rem;
+  margin-top: 1rem;
 }
