@@ -28,9 +28,13 @@
   line-height: 100%;
 }
 
+.nav__flex {
+  display: flex;
+  align-items: center;
+}
+
 .nav__logo {
-  font-size: 1.5em;
-  font-weight: 900;
+  margin-right: 3rem;
 }
 
 .nav__label, .nav__input {
@@ -46,41 +50,53 @@
 .nav__item {
   color: var(--Grayish-blue);
   font-weight: 700;
-  padding: 1rem 0;
+  padding: 40px 0;
   text-decoration: none;
 }
 
 .nav__item:hover {
- 
+  text-decoration: underline var(--Orange);
 }
 
-.nav__item::after {
-  display: block;
-  background-color: #fff;
-  width: 90%;
-  margin-top: 3px;
-  height: 3px;
+.nav__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
+.nav__avatar_cart {
+  margin-right: 3rem;
+}
+
+.nav__avatar_avatar {
+  height: 3rem;
+}
+
+@media (max-width: 769px) {
+
+  .nav__flex {
+    flex-direction: row-reverse;
+  }
   .nav__label {
-    display: block;
     cursor: pointer;
+    display: flex;
+    align-self: end;
   }
   .nav__menu {
     z-index: 100;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: none;
+    padding-left: 5rem;
+    padding-top: 3rem;
     position: fixed;
-    top: 70px;
+    top: 99px;
     bottom: 0;
     width: 50%;
-    right: 0;
-    border-radius: 5% 0px 0 5%;
-    background-color: #002ead;
-    clip-path: circle(0 at right);
+    left: 0;
+    background-color: var(--Light-grayish-blue);
+    clip-path: circle(0 at left);
     transition: clip-path .8s ease-in-out;
   }
 
@@ -88,10 +104,39 @@
     clip-path: circle(100% at center);
   }
 
+  .nav__item {
+    padding: 0;
+  }
+
+  .nav__img {
+    margin-right: 1rem;
+  }
+
 }
 
-@media (max-width: 475px) {
+@media (max-width: 476px) {
+
+  .nav {
+    height: 70px;
+    width: 90%;
+    border-bottom: none;
+  }
+  .nav__logo {
+    margin-right: 1rem;
+  }
   .nav__menu {
     width: 70%;
+    top: 70px;
+    padding-left: 2rem;
+    align-items: flex-start;
+    justify-content: none;
+  }
+
+  .nav__avatar_cart {
+    margin-right: 1rem;
+  }
+
+  .nav__avatar_avatar {
+    height: 2rem;
   }
 }
