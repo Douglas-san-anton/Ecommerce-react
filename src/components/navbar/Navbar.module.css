@@ -72,7 +72,7 @@
   height: 3rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
   .nav__flex {
     flex-direction: row-reverse;
@@ -95,7 +95,6 @@
     bottom: 0;
     width: 50%;
     left: 0;
-    border-radius: 5% 0px 0 5%;
     background-color: var(--Light-grayish-blue);
     clip-path: circle(0 at left);
     transition: clip-path .8s ease-in-out;
@@ -119,6 +118,7 @@
 
   .nav {
     height: 70px;
+    width: 90%;
     border-bottom: none;
   }
   .nav__logo {

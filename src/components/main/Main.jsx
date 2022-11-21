@@ -49,7 +49,7 @@ export const Main = () => {
             <button className={Styles.btn__plus}><img src={plus} alt="" /></button>
           </div>
 
-          <button className={Styles.btn__add}><img src={cart} fill="#fff" alt="" /> Add to cart</button>
+          <button className={Styles.btn__add}><img src={cart} alt="" /> Add to cart</button>
 
         </section>
 
